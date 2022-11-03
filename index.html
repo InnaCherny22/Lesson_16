@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 15</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"> </header>
+<main class="page">
+	<form class="form" method="POST" enctype="multipart/form-data" action="#">
+		<div class="form__line">
+			<label class="form__label" for="">Я окремий пiдпис</label>
+		</div>
+		<div class="form__line">
+			<label class="form__label" for="age-01">Введiть ваш вiк</label>
+			<input id="age-01" class="form__input" tabindex="2" required autocomplete="off" placeholder="Введiть ваш вiк" name="age" type="text">
+		</div>
+		<div class="form__line">
+			<input class="form__input" tabindex="1" required autocomplete="off" placeholder="Введiть ваш краiну" name="country" type="text">
+		</div>
+		<div class="form__line">
+			<input class="form__input"  required autocomplete="off" placeholder="Введiть ваш E-mail" name="country" type="email">
+		</div>
+		<div class="form__line">
+			<input class="form__input" required value="fjhhff" name="token" type="hidden">
+		</div>
+		<div class="form__line">
+			<input class="form__input" required autocomplete="off" placeholder="Введiть номер телефона" name="phone" type="tel">
+		</div>
+		<div class="form__line">
+			<input class="form__input" required autocomplete="off" placeholder="Введiть ваш пароль" name="pass" type="password">
+		</div>
+		<div class="form__line">
+			<input class="form__input" required autocomplete="off" placeholder="Введiть ваше число" name="digi" type="number">
+		</div>
+		<div class="form__line">
+			<input class="form__input"autocomplete="off" placeholder="Введiть дату" name="color" value="#ffffff" type="color">
+		</div>
+		<div class="form__line">
+			<input class="form__input"autocomplete="off" name="date" type="date">
+		</div>
+		<div class="form__line">
+			<input class="form__input"autocomplete="off" name="range" type="range">
+		</div>
+		<div class="form__line">
+			<input id="car-01" class="form__input form__input_chk"autocomplete="off" name="car" type="checkbox">
+			<label class="form__label" for="car-01">Е авто?</label>
+			
+		</div>
+		<div class="form__line">
+			<input id="home-01" class="form__input form__input_chk"autocomplete="off" name="home" type="checkbox">
+			<label class="form__label" for="home-01">Е де жити?</label>
+		</div>
+		<div class="form__line">
+			<div class="form__title">Улюблена тваринка</div>
+			<div class="form__radio">
+			<input checked class="form__input form__input_radio" id="pet-01" required autocomplete="off" value="cat" name="pet" type="radio">
+			<label class="form__label" for="pet-01">Кiшка</label>
+		</div>
+		<div class="form__radio">
+			<input class="form__input form__input_radio" id="pet-02" required autocomplete="off" value="dog" name="pet" type="radio">
+			<label class="form__label" for="pet-02">Собака</label>
+		</div>
+		</div>
+		<div class="form__line">
+			<input class="form__input" name="file" accept="" multiple type="file">
+		</div>
+		<div class="form__line">
+			<textarea autocomplete="off" name="message" placeholder="" class="form__area"></textarea>
+		</div>
+		<div class="form__line">
+			<select multiple name="list">
+				<option  value="1">Пункт 1</option>
+				<option value="2">Пункт 2</option>
+				<option selected value="3">Пункт 3</option>
+				<option value="3">Пункт 4</option>
+				<option value="4">Пункт 5</option>
+			</select>
+		</div>
+		<div class="form__line">
+			<button type="reset" class="form__button">Кнопка</button>
+		</div>
+	</form> 
+	<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
+		<div class="form__line">
+			<label for="name" class="form__label">Введiть iм`я</label>
+			<input id="name" class="form__input" required autocomplete="off" type="text" name="name" placeholder="Введiть iм`я">
+		</div>
+		<div class="form__line">
+			<label for="name" class="form__label">Введiть пароль</label>
+			<input id="name" class="form__input" required autocomplete="off" type="password" name="pass" placeholder="Введiть пароль">
+		</div>
+		<div class="form__line">
+			<button type="submit" class="form__button">Надiслати</button>
+		</div>
+	</form>
+	<section class="data">
+		<div class="data__pic">
+			<img src="img/illustration.svg" alt="">
+		</div>
+		<div class="data__page">
+		<div class="data__questions">
+			<h3 class="data__subtitle">Any questions?</h3>
+			<h1 class="data__title">Drop us a line</h1>
+		</div>
+			<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="data__post">
+				<div class="data__block">
+				<div class="data__form">
+			     <label for="name-01" class="data__label">First Name*</label>
+			     <input id="name-01" class="data__input" required  type="name" name="name" placeholder="Your first name">
+				</div>
+				<div class="data__form">
+			     <label for="name-02" class="data__label">Last Name*</label>
+			     <input id="name-02" class="data__input" required  type="name" name="name" placeholder="Your last name">
+				</div>
+			</div>
+				<div class="data__block">
+					<div class="data__form">
+						<label for="email-01" class="data__label">Email*</label>
+						<input id="email-01" class="data__input" required  type="email" name="email" placeholder="Your working email">
+					</div>
+					<div class="data__form">
+						<label for="phone-01" class="data__label">Phone</label>
+						<input id="phone-01" class="data__input"  type="tel" name="phone" placeholder="Your phone number">
+					</div>
+				</div>
+				<div class="data__margin">
+					<div class="data__form">
+						<label for="message-01" class="data__label">Message*</label>
+						<textarea name="message" id="message-01" placeholder="Your message" class="data__area"></textarea>
+					</div>
+				</div>
+				<div class="data__agree">
+				<div class="data__choice">
+					<input checked class="data__check input" id="agree-01" required autocomplete="off" value="on" name="agree" type="checkbox">
+					<label class="data__check label" for="agree-01"><span class="data__check text">I agree to receive communications from Createx Online School</span></label>
+				</div>
+				<div class="data__but">
+					<button type="reset" class="data__but button"> <span>Send message</span></button>
+				</div>
+			</div>
+			</form>
+		</div>
+	</section>
+</main>
+<footer class="footer"></footer>
+	</div>
+</body>
+</html>
